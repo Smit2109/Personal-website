@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+
+</head>
+
+<body>
+<!--Cream un navigation bar pentru a ne fi usor sa accesam paginile site-ului-->
+<div class="navbar">
+    <div class="logo">
+        <img src="img/logo.svg"></a>
+    </div>
+    <!--cream lista pentru butoanele din bara-->
+    <div>
+        <li><a href="homePage.html" style="color: midnightblue; background-color: #E5FFDE; opacity: 0.8">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="proiect.html">Proiect</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </div>
+    <!--cream butonul care va deschide lista cu butoanele din bara-->
+    <div class="dropdown">
+        <div class="dropdown-text">
+            <div class="menuIcon"></div>
+            <div class="menuIcon"></div>
+            <div class="menuIcon"></div>
+        </div>
+        <input type="checkbox">
+        <!--declaram continutul dropdown-ului-->
+        <div class="dropdown-container">
+            <a href="homePage.html" style="color: midnightblue; background-color: #E5FFDE; opacity: 0.8">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="proiect.html">Proiect</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</div>
+
+<div class="all">
+    <!--am facut clasa all pentru a putea baga elemntele intr-un div centrat cu margini stanga dreapta 25%-->
+    <div class="container">
+        <div class="poza">
+            <img alt="pozaMea" src="img/pozaMea.png">
+        </div>
+        <div class="text">
+            <h3>
+                About me
+            </h3>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="sporturi">
+            <p>I can say about my self that I am a very active person, because I am part of many activities and I do
+                sport every week.</p>
+            <p><strong>Some of the sports that I love to play are:</strong></p>
+            <!--am folosit strong pentru a scrie boldat-->
+            <ul id="listaSporturi">
+                <li>Football</li>
+                <li>Basketball</li>
+                <li>Volleyball</li>
+                <li>Biliard and Bowling</li>
+                <li>Running</li>
+                <li>Gym</li>
+            </ul>
+        </div>
+        <div class="activitati">
+            <p>I am volunteering at LSAC Bucharest since 2021 and I am part of <strong>Human Resources</strong>
+                department.</p>
+            <p>Since 4 years ago, every summer I was trainer socio-educative for kids in summer camps. This helped me
+                to build my communicative skills, creativity and overall be a happier person.</p>
+        </div>
+        <div class="domeniu">
+            <p>About the <strong>path</strong> that I've choosed, since I was a kid a enjoyed to navigate throw phone
+                and pc folders to see fancy things.</p>
+            <p>When I got to college we started programming and this became a passion for me. I started to learn new
+                things and I knew this is what I want</p>
+        </div>
+    </div>
+</div>
+<!--am creat clasa aux pentru a da pozitie absoluta la acest div, iar la footer am dat positon relative-->
+<div class="aux">
+    <div class="footer">
+        <p>&copy; Copyright 2022, Schmidt Andrei-Cosmin</p>
+    </div>
+</div>
+
+</body>
+</html>

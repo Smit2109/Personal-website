@@ -1,0 +1,293 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+.navbar {
+    height: 5%;
+    background-color: #0082c8;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.navbar li {
+    font-weight: bold;
+    height: 5%;
+    padding: 5px 14px;
+    display: inline;
+    color: white;
+}
+
+.navbar a {
+    height: 5%;
+    color: white;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none; /*scoate underline-ul linkurile*/
+    line-height: 70px;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.navbar a:active {
+    color: yellow;
+}
+
+.navbar a:hover {
+    color: midnightblue;
+    background-color: #E5FFDE;
+    opacity: 1;
+}
+
+.logo {
+    height: 5%;
+    filter: invert(100%) sepia(3%) saturate(0%) hue-rotate(2deg) brightness(101%) contrast(101%);
+}
+
+.all {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+
+.all h3 {
+    text-align: center;
+}
+
+.contact {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact h3 {
+    text-align: left;
+}
+
+.poza img {
+    margin-bottom: 50px;
+    float: right;
+    border-radius: 50%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 15px;
+}
+
+a.buttonFB, a.buttonIG {
+    text-decoration: none; /*sterge sublinierea link-urilor*/
+    color: midnightblue;
+}
+
+.infoCV {
+    margin-left: 25%;
+    margin-right: 25%;
+    position: absolute;
+}
+
+.infoCV h3, p, table {
+    text-align: center;
+}
+.tableContainer table{
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    align: center;
+}
+
+.project {
+    margin-left: 25%;
+    margin-right: 25%;
+    position: absolute;
+    text-align: center;
+}
+
+.project a {
+    display: block;
+    align-self: center;
+}
+
+.project img {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 40px;
+    background-color: #0082c8;
+}
+
+.footer p {
+    color: white;
+}
+
+.sporturi ul {
+    list-style-type: none;
+}
+
+.email {
+    margin-left: 10px;
+}
+
+.telefon {
+    margin-right: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+/*facem logo-ul alb, initial logo-ul fiind negru*/
+.menuIcon {
+    filter: invert(100%) sepia(3%) saturate(0%) hue-rotate(2deg) brightness(101%) contrast(101%);
+}
+
+
+.dropdown > .dropdown-text {
+    padding: 10px 20px;
+}
+
+.dropdown > input {
+    top: 0;
+    opacity: 0;
+    margin: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown > input:checked + .dropdown-container {
+    transform: scaleY(1);
+}
+
+.dropdown > .dropdown-container {
+    transform: scaleY(0);
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+.dropdown > .dropdown-container > a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.menuIcon {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+
+/*formatam aspectul elementelor cand rezolutia ecranului este sub 1500*/
+@media (max-width: 1500px) {
+    .all, .project, .infoCV, .contact {
+        margin-left: 17%;
+        margin-right: 17%;
+        width: 66%;
+    }
+}
+
+/*formatam aspectul elementelor cand rezolutia ecranului este sub 1100*/
+@media (max-width: 1100px) {
+    .poza img, .project img, .infoCV, .contact {
+        width: 200px;
+        height: 200px;
+    }
+    .all, .project, .infoCV, .contact {
+        margin-left: 12%;
+        margin-right: 12%;
+        width: 76%;
+    }
+}
+
+/*formatam aspectul elementelor cand rezolutia ecranului este sub 800*/
+@media (max-width: 800px) {
+    .navbar li {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .poza {
+        display: flex;
+        justify-content: center;
+    }
+
+    .dropdown {
+        display: inline-block;
+        z-index: 1;
+    }
+
+    .poza img {
+        margin: auto;
+    }
+
+    .all, .project, .infoCV, .contact {
+        margin-top: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+
+    .navbar {
+        height: 5%;
+        display: flex;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .navbar li {
+        height: 1%;
+        padding: 5px 14px;
+    }
+
+    .navbar a {
+        height: 5%;
+        font-size: 16px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        text-decoration: none; /*scoate underline-ul linkurile*/
+        line-height: 70px;
+        padding: 5px 15px;
+        border-radius: 3px;
+    }
+
+    .menuProiect img {
+        margin-top: 50px;
+        width: 200px;
+        height: 200px;
+        text-align: left;
+    }
+}
+
+
+
